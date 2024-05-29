@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/pb_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_user_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:attr/dividerVertical"
+            android:dividerHeight="8dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+            <!-- ImageView for profile picture -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileImage"
+                style="@style/CircleImageView"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="16dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="textEmailAddress" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="phone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="textPassword" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/birthDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="date" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/bloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/eyeColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/hairColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/hairType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="textPostalAddress" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/stateCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/postalCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/macAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/university"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cardExpire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="date" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cardType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/iban"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/companyDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/companyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/companyTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/companyAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="textPostalAddress" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ein"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ssn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cryptoCoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cryptoWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cryptoNetwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/border"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

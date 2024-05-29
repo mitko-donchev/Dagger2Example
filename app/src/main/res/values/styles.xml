@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Circular image style with border -->
+    <style name="CircleImageView" parent="">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Circle</item>
+        <item name="strokeColor">@color/black</item> <!-- Border color -->
+        <item name="strokeWidth">2dp</item> <!-- Border width -->
+    </style>
+
+    <!-- Define the circular shape appearance -->
+    <style name="ShapeAppearance.Circle" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
